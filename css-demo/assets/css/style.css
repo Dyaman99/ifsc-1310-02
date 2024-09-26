@@ -1,5 +1,9 @@
 /* CSS Demo Stylesheet */
 
+/*  My color palette: Navyblue #073770  |  Yellow #FAF0B1  | Pink #FFCDE5  | Lightblue #D2F0FF  | Black #000000 | Darkpurple #57184A | White #FFFFFF */
+
+/* My font: Verdana, sans-serif	*/
+
 /*  ---------------Box Sizing-----------------  */
 
 html {
@@ -14,7 +18,7 @@ html {
 /*  ---------------Global Styles-----------------  */
 
 body{
-    font-family: "Mulish", sans-serif;
+    font-family: "Verdana", sans-serif;
 }
 
 header.primary{
