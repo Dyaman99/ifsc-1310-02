@@ -19,8 +19,74 @@ html {
 
 body{
     font-family: "Verdana", sans-serif;
+    margin:0;
 }
 
 header.primary{
-    background:red;
+    background:#57184A;
+    color:#FFFFFF;
+    text-shadow:2px 1px #000000;
+
+    /* long from */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+
+    /*Single value short hand */
+    padding: 40px;
+
+    /* T, R, B, L */
+
+    padding: 20px 40px 20px 40px;
+
+    /* Two Value Top/Bottom  L/R */
+    padding: 20px 40px;
+    text-align:center;
+
 }
+
+header.primary h1{
+  font-size: 3rem;
+  margin:20px 0 0 0;
+}
+
+header.primary h1 a{
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size: 1.5rem;
+  margin:5px 5px;
+}
+
+nav.primary{}
+
+nav.primary ul{
+  padding: 10px 15px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+nav.primary ul li{
+  list-style-type: none;
+
+}
+
+nav.primary ul li a{
+  color: #FFCDE5;
+  text-decoration:none;
+  border: 1px solid #FAF0B1;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0, .3);
+  transition: .4s;
+}
+
+nav.primary ul li a:hover{
+  background-color: rgba(0,0,0, .9);
+}
+
+
