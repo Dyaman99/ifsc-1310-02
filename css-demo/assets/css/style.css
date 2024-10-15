@@ -231,6 +231,47 @@ td:nth-child(n+2){
   text-align:right;
 }
 
+#practice ol{
+  list-style-type:lower-alpha;
+}
+
+#practice ul{
+  list-style-type:square;
+}
+
+#practice ul li ul{
+  list-style-type:disc;
+}
+
+#practice dt{
+  font-weight:bold;
+}
+
+#practice dd{
+  margin:0;
+}
+
+dd + dt{
+  margin-top:20px;
+}
+
+blockquote{
+  border: 4px groove;
+  padding: 15px 30px;
+  background-color: #073770;
+  color:#FFFFFF;
+  border-radius: 5px;
+  margin:;
+  line-height:;
+}
+
+cite{
+  display:block;
+  text-align:right;
+  font-size:.7rem;
+  margin-top:1rem;
+}
+
 
 aside[role="complementary"]{
   background-color:#D2F0FF ;
@@ -258,7 +299,7 @@ aside .widget footer{
   display: none;
 }
 
-footer#colophon{
+footer#colophon.primary {
   background-color: #000000;
   color:#FFCDE5;
   padding:10px;
