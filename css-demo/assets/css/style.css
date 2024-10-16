@@ -6,7 +6,7 @@
 
 /*  ---------------Box Sizing-----------------  */
 
-html {
+html{
     box-sizing: border-box;
   }
   *,
@@ -139,7 +139,7 @@ nav.primary ul li a:hover{
 }
 #intro h2{
   color:#57184A;
-  border-bottom: 1px dotted #FFCDE5;
+  border-bottom: 1px solid #FFCDE5;
 }
 
 #content{
@@ -147,9 +147,9 @@ nav.primary ul li a:hover{
   flex-direction:row;
   justify-content: space-around;
   gap:2rem;
-  border-top:1px dotted #FFCDE5;
+  border-top:1px solid #FFCDE5;
   padding: 2.6rem;
-  border-bottom:1px dotted #FFCDE5;
+  border-bottom:1px solid #FFCDE5;
 }
 
 #content article.post{
@@ -179,7 +179,7 @@ time.post-date, figcaption{
 
 #practice h2{
   color: #57184A;
-  border-bottom: 1px dotted #FFCDE5;
+  border-bottom: 1px solid #FFCDE5;
 }
 
 #practice a{
@@ -232,7 +232,7 @@ td:nth-child(n+2){
 }
 
 #practice ol{
-  list-style-type:lower-alpha;
+  list-style-type:upper-alpha;
 }
 
 #practice ul{
@@ -244,7 +244,8 @@ td:nth-child(n+2){
 }
 
 #practice dt{
-  font-weight:bold;
+  font-weight: bold;
+  color:#073770;
 }
 
 #practice dd{
@@ -256,12 +257,13 @@ dd + dt{
 }
 
 blockquote{
-  border: 4px groove;
+  border: 4px double;
   padding: 15px 30px;
   background-color: #073770;
   color:#FFFFFF;
+  font-size:1.1rem;
   border-radius: 5px;
-  margin:10px;
+  margin:15px;
   line-height:1.4;
 }
 
@@ -350,7 +352,7 @@ footer#colophon.primary {
   } 
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:700px){
   #content{
     flex-direction:column;
   }
