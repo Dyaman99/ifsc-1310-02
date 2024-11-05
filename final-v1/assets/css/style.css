@@ -1,0 +1,100 @@
+/* CSS Demo Stylesheet */
+
+/*  My color palette: Blue #7ABFBF  |  Green #9EBF56  | Pink #D98FB1  | CoffeeBrown #BFA288  | Black #000000 | Wood #A64826 | White #FFFFFF */
+
+/* My font: font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;	*/
+
+/*  ---------------Box Sizing-----------------  */
+
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/* ------------------Responsive Images------------------*/
+img{
+  max-width:100%;
+}
+
+/* ------------------Utility Classes------------------ */
+
+.container{
+    width:80vw;
+    max-width:1000px;
+    margin: 40px auto;
+  }
+  
+.img-right{
+    float:right;
+    margin:10px 0 10px 20px;
+    border:1px solid #ccc;
+    padding:5px;
+    border-radius:5px;
+}
+  
+.img-left{
+    float:left;
+    margin:10px 20px 10px 0px;
+    border:1px solid #ccc;
+    padding:5px;
+    border-radius:5px;
+  }
+  
+.img-center{
+    border:1px solid #ccc;
+    padding:5px;
+    border-radius:5px;
+    display:block;
+    margin:20px auto;
+  }
+  
+    
+  /*  ---------------Global Styles-----------------  */
+  
+  body{
+    font-family: "Century Gothic", sans-serif;
+    margin:0px;
+  }
+
+  header.primary{
+    background-color:#7ABFBF;
+    padding:20px 40px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header.primary h1{
+    margin:10px 20px;
+  }
+
+  nav.primary{
+    margin:0px;
+  }
+  
+  nav.primary ul{
+    padding: 10px 15px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+  }
+
+  nav.primary ul li{
+    list-style-type: none;
+    margin:0 0 0 20px;
+  }
+
+  nav.primary ul li a{
+    text-decoration:none;
+    padding:5px 10px;
+  }
+
+  #intro{
+    line-height: 1.4;
+  }
+
+
