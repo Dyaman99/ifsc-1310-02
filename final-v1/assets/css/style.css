@@ -70,6 +70,7 @@ img{
 
   header.primary h1{
     margin:10px 20px;
+    color:#ffffff;
   }
 
   nav.primary{
@@ -91,6 +92,11 @@ img{
   nav.primary ul li a{
     text-decoration:none;
     padding:5px 10px;
+    color:#ffffff;
+  }
+
+  nav.primary ul li a:hover{
+    color:navy;
   }
 
   #intro{
