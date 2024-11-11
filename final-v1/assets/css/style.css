@@ -54,13 +54,14 @@ img{
   
     
   /*  ---------------Global Styles-----------------  */
+
   
-  body{
+body{
     font-family: "Century Gothic", sans-serif;
     margin:0px;
   }
 
-  header.primary{
+header.primary{
     background-color:#7ABFBF;
     padding:20px 40px;
     display:flex;
@@ -68,39 +69,101 @@ img{
     justify-content: space-between;
   }
 
-  header.primary h1{
+header.primary h1{
     margin:10px 20px;
     color:#ffffff;
   }
 
-  nav.primary{
+nav.primary{
     margin:0px;
   }
   
-  nav.primary ul{
+nav.primary ul{
     padding: 10px 15px;
     display:flex;
     flex-direction:row;
     justify-content: space-around;
   }
 
-  nav.primary ul li{
+nav.primary ul li{
     list-style-type: none;
     margin:0 0 0 20px;
   }
 
-  nav.primary ul li a{
+nav.primary ul li a{
     text-decoration:none;
     padding:5px 10px;
     color:#ffffff;
   }
 
-  nav.primary ul li a:hover{
+nav.primary ul li a:hover{
     color:navy;
   }
 
-  #intro{
+/*------------------ Intro ------------------- */
+
+#intro{
     line-height: 1.4;
   }
+
+/* -------------- Services -------------------*/
+
+section#services{
+  padding:30px;
+
+}
+
+section#services > div{
+  background-color:#ccc;
+  padding:20px;
+  margin-bottom:40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+section#services img{
+  border-radius: 10px;
+}
+
+#img-left article{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:flex-start;
+  gap:1.5rem;
+}
+
+#img-right article{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+  align-items:flex-start;
+  gap:1.5rem;
+}
+
+div.side-text{
+  margin:0px 20px;
+}
+
+/*---------------- Our Studio --------------- */
+
+
+section#studio h2{
+  color:#D98FB1;
+  border-bottom: 1px solid #ccc;
+}
+
+#address{
+  padding: 0px 20px;
+}
+
+section#studio li{
+  margin-bottom:20px;
+}
+
+
+/* -------------------- Events ---------------------- */
+
+
 
 
