@@ -72,6 +72,7 @@ header.primary{
 header.primary h1{
     margin:10px 20px;
     color:#ffffff;
+    font-size: 2.5rem;
   }
 
 nav.primary{
@@ -94,35 +95,45 @@ nav.primary ul li a{
     text-decoration:none;
     padding:5px 10px;
     color:#ffffff;
+    transition:0.3s;
   }
 
 nav.primary ul li a:hover{
     color:navy;
+    text-decoration: underline;
   }
 
 /*------------------ Intro ------------------- */
+
+section#intro h2{
+  font-size:2rem;
+}
 
 #intro{
     line-height: 1.4;
   }
 
+
+
 /* -------------- Services -------------------*/
 
 section#services{
-  padding:30px;
+  padding:20px;
 
 }
 
 section#services > div{
-  background-color:#ccc;
-  padding:20px;
-  margin-bottom:40px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  background-color:#fff;
+  padding: 20px 0px;
+  margin: 20px 0px;
 }
 
 section#services img{
-  border-radius: 10px;
+  border-radius: 0px;
+}
+
+section#services div:first-child{
+  margin-bottom: 60px;
 }
 
 #img-left article{
@@ -142,28 +153,121 @@ section#services img{
 }
 
 div.side-text{
-  margin:0px 20px;
+  margin:0px 10px;
 }
+
+div#img-left h3{
+  color:#9EBF56;
+  font-size:2rem;
+}
+
+div#img-right h3{
+  color:#A64826;
+  font-size:2rem;
+}
+
+article.post time{
+  font-weight: bold;
+}
+
+/* -------------------- Events ---------------------- */
+
+section#events{
+  background-color: #BFA288;
+  padding:20px;
+}
+
+section#events h2{
+  color: #ffffff;
+  font-size: 2rem;
+  text-align:center;
+  text-shadow:2px 2px #000;
+}
+
+section#events .container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+
+#events article.post{
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.post figcaption{
+  font-size:x-small;
+}
+
+.post h3,
+.post time,
+.post p{
+  padding:0px 10px;
+}
+
+.post h3{
+  font-size:1.4rem;
+  color:#A64826;
+}
+
+.post figure{
+  margin:10px;
+}
+
+.post img{
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*---------------- Our Studio --------------- */
 
+aside#studio{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding:20px;
+}
 
-section#studio h2{
+aside#studio h2{
   color:#D98FB1;
   border-bottom: 1px solid #ccc;
+  font-size:2rem;
 }
 
 #address{
   padding: 0px 20px;
 }
 
-section#studio li{
+aside#studio li{
   margin-bottom:20px;
 }
 
 
-/* -------------------- Events ---------------------- */
 
-
+/*-------------------- Footer  ---------------------  */
+footer#colophon {
+  background-color: #000000;
+  color:#fff;
+  padding:10px;
+  text-align:center;
+  font-size:1.2rem;
+}
 
 
