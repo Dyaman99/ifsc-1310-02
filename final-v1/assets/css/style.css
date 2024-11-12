@@ -136,7 +136,7 @@ section#services div:first-child{
   margin-bottom: 60px;
 }
 
-#img-left article{
+div#img-left {
   display:flex;
   flex-direction: row;
   justify-content:center;
@@ -144,7 +144,7 @@ section#services div:first-child{
   gap:1.5rem;
 }
 
-#img-right article{
+div#img-right {
   display:flex;
   flex-direction: row-reverse;
   justify-content:center;
@@ -166,9 +166,7 @@ div#img-right h3{
   font-size:2rem;
 }
 
-article.post time{
-  font-weight: bold;
-}
+
 
 /* -------------------- Events ---------------------- */
 
@@ -194,7 +192,7 @@ section#events .container{
 #events article.post{
   width: 30%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  padding: 10px;
+  padding: 20px;
   transition: 0.6s;
   font-size: 0.8rem;
   border-radius: 10px;
@@ -217,14 +215,16 @@ section#events .container{
 }
 
 .post figure{
-  margin:10px;
+  margin:0px;
 }
 
 .post img{
   border-radius: 10px;
 }
 
-
+article.post time{
+  font-weight: bold;
+}
 
 
 
@@ -241,8 +241,9 @@ section#events .container{
 aside#studio{
   display:flex;
   flex-direction:row;
-  justify-content: space-between;
-  padding:20px;
+  justify-content:space-around;
+  align-items:flex-start;
+  padding:20px 0px;
 }
 
 aside#studio h2{
@@ -270,4 +271,54 @@ footer#colophon {
   font-size:1.2rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------Media Queries -----------------*/
+
+@media screen and (max-width:940px){
+  nav.primary ul{
+    flex-direction:column;
+    gap:5px;
+    max-width:250px;
+    margin:10px auto;
+  }
+
+  div#img-left,
+  div#img-right{
+    flex-direction:column;
+  }
+
+  
+
+}
+
+@media screen and (max-width:700px){
+  section#events .container{
+    flex-direction:column;
+    gap:40px;
+
+  }
+
+  #events article.post{
+    width:100%;
+  }
+
+  aside#studio{
+    flex-direction:column;
+  }
+}
 
