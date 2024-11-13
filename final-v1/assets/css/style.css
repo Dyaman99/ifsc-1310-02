@@ -71,9 +71,22 @@ header.primary{
 
 header.primary h1{
     margin:10px 20px;
-    color:#ffffff;
+    color:#000000;
     font-size: 2.2rem;
   }
+
+header.primary h1 a {
+  color: #000;
+  background-image: url("../img/palette.png");
+  display: block;
+  width: 340px;
+  height: 80px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+  
 
 nav.primary{
     margin:0px;
@@ -92,14 +105,15 @@ nav.primary ul li{
   }
 
 nav.primary ul li a{
+    font-size:1.1rem;
     text-decoration:none;
     padding:5px 10px;
-    color:#ffffff;
-    transition:0.3s;
+    color:#000000;
+    transition:0.4s;
   }
 
 nav.primary ul li a:hover{
-    color:navy;
+    color:rgb(254, 254, 255);
     text-decoration: underline;
   }
 
@@ -107,6 +121,7 @@ nav.primary ul li a:hover{
 
 section#intro h2{
   font-size:2rem;
+  color:#7ABFBF;
 }
 
 #intro{
@@ -260,7 +275,10 @@ aside#studio li{
   margin-bottom:20px;
 }
 
-
+aside#studio figure img{
+  width:420px;
+  height: 560px;
+}
 
 /*-------------------- Footer  ---------------------  */
 /* My font: font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;	*/
@@ -273,6 +291,7 @@ footer#colophon {
   padding:20px;
   text-align:center;
   font-size:1.2rem;
+  align-items: center;
 }
 
 
@@ -281,6 +300,8 @@ footer#colophon > p{
   font-family: "Century Gothic", AppleGothic;
   font-style: italic;
   max-width:100px;
+  text-align: left;
+  font-weight: bold;
 }
 
 div#contact p{
