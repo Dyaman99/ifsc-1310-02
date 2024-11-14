@@ -1,0 +1,363 @@
+/* CSS Demo Stylesheet */
+
+/*  My color palette: Blue #7ABFBF  |  Green #9EBF56  | Pink #D98FB1  | CoffeeBrown #BFA288  | Black #000000 | Wood #A64826 | White #FFFFFF */
+
+/* My font: font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;	*/
+
+/*  ---------------Box Sizing-----------------  */
+
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/* ------------------Responsive Images------------------*/
+img{
+  max-width:100%;
+}
+
+/* ------------------Utility Classes------------------ */
+
+.container{
+    width:80vw;
+    max-width:1000px;
+    margin: 40px auto;
+  }
+  
+.img-right{
+    float:right;
+    margin:10px 0 10px 20px;
+    border:1px solid #ccc;
+    padding:5px;
+    border-radius:5px;
+}
+  
+.img-left{
+    float:left;
+    margin:10px 20px 10px 0px;
+    border:1px solid #ccc;
+    padding:5px;
+    border-radius:5px;
+  }
+  
+.img-center{
+    border:1px solid #ccc;
+    padding:5px;
+    border-radius:5px;
+    display:block;
+    margin:20px auto;
+  }
+  
+    
+  /*  ---------------Global Styles-----------------  */
+
+  
+body{
+    font-family: "Century Gothic", sans-serif;
+    margin:0px;
+  }
+
+header.primary{
+    background-color:#7ABFBF;
+    padding:10px 40px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+header.primary h1{
+    margin:10px 20px;
+    color:#000000;
+    font-size: 2.2rem;
+  }
+
+header.primary h1 a {
+  color: #000;
+  background-image: url("../img/palette.png");
+  display: block;
+  width: 340px;
+  height: 80px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+  
+
+nav.primary{
+    margin:0px;
+  }
+  
+nav.primary ul{
+    padding: 10px 15px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+  }
+
+nav.primary ul li{
+    list-style-type: none;
+    margin:0 0 0 20px;
+  }
+
+nav.primary ul li a{
+    font-size:1.1rem;
+    text-decoration:none;
+    padding:5px 10px;
+    color:#000000;
+    transition:0.4s;
+  }
+
+nav.primary ul li a:hover{
+    color:rgb(254, 254, 255);
+    text-decoration: underline;
+  }
+
+/*------------------ Intro ------------------- */
+
+section#intro h2{
+  font-size:2rem;
+  color:#7ABFBF;
+}
+
+#intro{
+    line-height: 1.4;
+  }
+
+
+
+/* -------------- Services -------------------*/
+
+section#services{
+  padding:20px;
+
+}
+
+section#services > div{
+  background-color:#fff;
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
+
+section#services img{
+  border-radius: 0px;
+}
+
+section#services div:first-child{
+  margin-bottom: 60px;
+}
+
+div#img-left {
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:flex-start;
+  gap:1.5rem;
+}
+
+div#img-right {
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+  align-items:flex-start;
+  gap:1.5rem;
+}
+
+div.side-text{
+  margin:0px 10px;
+}
+
+div#img-left h3{
+  color:#9EBF56;
+  font-size:2rem;
+}
+
+div#img-right h3{
+  color:#A64826;
+  font-size:2rem;
+}
+
+
+
+/* -------------------- Events ---------------------- */
+
+section#events{
+  background-color: #BFA288;
+  padding:20px;
+}
+
+section#events h2{
+  color: #ffffff;
+  font-size: 2rem;
+  text-align:center;
+  text-shadow:2px 2px #000;
+}
+
+section#events .container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+
+#events article.post{
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.post figcaption{
+  font-size:x-small;
+}
+/* 
+.post h3,
+.post time,
+.post p{
+  padding:0px 10px;
+} */
+
+.post h3{
+  font-size:1.4rem;
+  color:#A64826;
+}
+
+.post figure{
+  margin:0px;
+}
+
+.post img{
+  border-radius: 10px;
+}
+
+article.post time{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------- Our Studio --------------- */
+
+aside#studio{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:flex-start;
+  padding:20px 0px;
+}
+
+aside#studio h2{
+  color:#D98FB1;
+  border-bottom: 1px solid #ccc;
+  font-size:2rem;
+}
+
+#address{
+  padding: 0px 20px;
+}
+
+aside#studio li{
+  margin-bottom:20px;
+}
+
+aside#studio figure img{
+  width:420px;
+  height: 560px;
+}
+
+/*-------------------- Footer  ---------------------  */
+/* My font: font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;	*/
+footer#colophon {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  background-color: #262626;
+  color:#fff;
+  padding:20px;
+  text-align:center;
+  font-size:1.2rem;
+  align-items: center;
+}
+
+
+footer#colophon > p{
+  font-size: 2rem;
+  font-family: "Century Gothic", AppleGothic;
+  font-style: italic;
+  max-width:100px;
+  text-align: left;
+  font-weight: bold;
+}
+
+div#contact p{
+  font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------Media Queries -----------------*/
+
+@media screen and (max-width:940px){
+  nav.primary ul{
+    flex-direction:column;
+    gap:5px;
+    max-width:250px;
+    margin:10px auto;
+  }
+
+  div#img-left,
+  div#img-right{
+    flex-direction:column;
+  }
+
+  
+
+}
+
+@media screen and (max-width:700px){
+  section#events .container{
+    flex-direction:column;
+    gap:40px;
+
+  }
+
+  #events article.post{
+    width:100%;
+  }
+
+  aside#studio{
+    flex-direction:column;
+  }
+}
+
