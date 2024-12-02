@@ -77,15 +77,15 @@ header.primary h1{
 }
 
 header.primary h1 a {
-color: #000;
-background-image: url("../img/palette.png");
-display: block;
-width: 340px;
-height: 80px;
-margin: 0 auto;
-text-indent: 100%;
-white-space: nowrap;
-overflow: hidden;
+  color: #000;
+  background-image: url("../img/palette.png");
+  display: block;
+  width: 340px;
+  height: 80px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 
@@ -121,8 +121,8 @@ nav.primary ul li a:hover{
 /*------------------ Intro ------------------- */
 
 section#intro h2{
-font-size:2.5rem;
-color:#7ABFBF;
+  font-size:2.5rem;
+  color:#7ABFBF;
 }
 
 #intro{
@@ -132,53 +132,53 @@ color:#7ABFBF;
 
 /* -------------- Services -------------------*/
 
-/* section#services{
-padding:20px;
+section#services{
+  padding:10px 0;
+}
 
-} */
 
 section#services > div{
-background-color:#fff;
-padding: 20px 0px;
-margin: 40px 0px;
+  background-color:#fff;
+  padding: 20px 0px;
+  margin: 40px 0px;
 }
 
 section#services img{
-border-radius: 0px;
+  border-radius: 0px;
 }
 
 section#services div:first-child{
-margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 div#img-left {
-display:flex;
-flex-direction: row;
-justify-content:center;
-align-items:flex-start;
-gap:1.5rem;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:flex-start;
+  gap:1.5rem;
 }
 
 div#img-right {
-display:flex;
-flex-direction: row-reverse;
-justify-content:center;
-align-items:flex-start;
-gap:1.5rem;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+  align-items:flex-start;
+  gap:1.5rem;
 }
 
 div.side-text{
-margin:0px 10px;
+  margin:0px 10px;
 }
 
 div#img-left h3{
-color:#D98FB1;
-font-size:2rem;
+  color:#D98FB1;
+  font-size:2rem;
 }
 
 div#img-right h3{
-color:#A64826;
-font-size:2rem;
+  color:#A64826;
+  font-size:2rem;
 }
 
 
@@ -186,9 +186,9 @@ font-size:2rem;
 /* -------------------- Events ---------------------- */
 
 section#events{
-background-color: #BFA288;
-padding:20px;
-margin:40px 0px;
+  background-color: #BFA288;
+  padding:20px;
+  margin:40px 0px;
 }
 
 section#events h2{
@@ -293,6 +293,7 @@ height: 560px;
 
 /*-------------------- Footer  ---------------------  */
 /* My font: font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;	*/
+
 footer#colophon {
 display:flex;
 flex-direction:row;
@@ -319,10 +320,13 @@ div#contact p{
 font-size: medium;
 }
 
+div#contact a{
+  color: #ffffff;
+}
 
 
 
-/* ------------------------------------------------ What to Make & Do --------------------------------------------------------- */
+/* ------------------------------------------------ What to Make & Do HTML----------------------------------------------------- */
 
 section#table-contents{
   border: 2px solid #ffffff;
@@ -425,9 +429,49 @@ tr:hover{
 
 
 /* ----------------------------------------------------- About HTML------------------------------------------------------------- */
+section#about-intro,
+section#our-story,
+section#our-founders,
+section#choose-us{
+  padding-bottom:10px;
+}
 
 #about-intro h2{
+  color:#7ABFBF;
+  font-size: 2.5rem;
+}
+
+
+
+section#our-story h2{
+  color:#D98FB1;
+  font-size: 2.5rem;
+}
+
+
+section#our-founders h2{
   color:#A64826;
+  font-size: 2.5rem;
+}
+
+div.fade{
+  margin:20px;
+  padding:20px;
+}
+
+div.fade img{
+  max-width: 75%;
+  margin: 0px auto;
+  padding-left: 20px;
+}
+
+div.bio{
+  margin: 50px 0;
+  padding-right: 20px;
+}
+
+div.bio h4{
+  font-size: 1.3rem;
 }
 
 /* Customize Previous/Next/Dots/Autoplay */
@@ -452,22 +496,19 @@ tr:hover{
     color:black;
 }
 
-/* section#our-founders{
-    margin:40px auto;
-    width:70vw;
-    Set Max Content Width 
-    max-width:700px; 
-
-} */
-
+/* I tried flexbox inside the accessible slick, it didn't work*/
+/* 
 div.founders{
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
+}  */
 
-} 
 
-
+section#choose-us h2{
+  color: #9EBF56;
+  font-size: 2.5rem;
+}
 
 
 
