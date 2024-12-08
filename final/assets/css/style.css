@@ -343,9 +343,9 @@ section#table-contents h4{
   font-size: 1.3rem;
 }
 
-/* section#table-contents ol{
-
-} */
+section#table-contents li{
+  font-size: 1.1rem;
+}
 
 section#table-contents ol li{
   margin-bottom: 10px;
