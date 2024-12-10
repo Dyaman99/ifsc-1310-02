@@ -561,5 +561,9 @@ section#events .container{
 aside#studio{
   flex-direction:column;
 }
+
+#about-intro div{
+  flex-direction: column;
+}
 }
 
